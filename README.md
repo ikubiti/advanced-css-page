@@ -44,13 +44,5 @@ The completed application should meet the following criteria:
 
     ![On a mobile device, the application displays one CSS code snippet per row.](./Images/03-app-mobile.png)
 
-## 💡 Hints
-
-* The HTML `<pre>` element is very literal about spaces and indentation. To gain a better understanding of how to work with it, check out this article on [considerations for styling the pre tag](https://css-tricks.com/considerations-styling-pre-tag/).
-
-## 🏆 Bonus
-
-* Set this project up in your own GitHub repositories so that you can deploy and use it for future reference!
-
 ---
 © 2022 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
