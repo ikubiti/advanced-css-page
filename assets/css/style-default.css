@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  /* font-size: 1em; */
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color:dimgrey;
+  color: violet;
+}
+ 
+main {
+  display: flex;
+  align-items: center;
+  /* margin-top: 2%;
+  margin-left: 20px; */
+  margin: 2% 20px auto 20px;
+  /* justify-content: space-evenly; */
+  /* Shorthand for commented out portion */
+  flex-flow: row wrap;
+  gap: 10px;
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+}
+
+#main-header {
+  display: flex;
+  flex:auto;
+  /* Forces elements to the next line if they don't fit */
+  flex-wrap: wrap;
+  /* Places items in the center */
+  justify-content: center;  
+  margin: 30px auto;
+}
+
+h1 + p {
+  color: white;
+  padding: 0 10%;
+  text-align: center; 
+}
+
+.code-header {
+  position: relative;
+  border: 2px solid whitesmoke;
+  border-radius: 5px;
+  margin-top: -20px;
+  width: 70%;
+  margin-left: 10%;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 600;
+  background-color: dimgrey;
+  padding-left: 10px;
+  /* font-size: 2rem; */
+}
+
+.code-card {
+  flex: 1 1 auto;
+  flex-wrap: wrap;
+  border: 1px dotted whitesmoke;
+  /* margin: 10px; */
+  /* width: 100%; */
+  padding: 10px;
+  /* flex-direction: column; */
+  
+  min-width: 400px;
+  /* font-size: 1.25rem; */
+  
+}
+
+.code-card pre {
+  color:antiquewhite;
+  background-image: linear-gradient(
+  rgba(232, 102, 236, 0.3) 0%,
+  rgba(232, 102, 236, 0.6) 100%
+  );
+  /* background-size: 100%; */
+  margin: 3%;
+  border-radius: 7px;
+} 
+
+/* TODO: Use media query to change the width of the cards so they are stacked on top of each other at 768px or smaller */
+/* 
+@media screen and (min-width: 992px) {
+
+  .code-card {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .code-card {
+    width: 30%;
+  }
+} */
+
+/*  
+@media screen and (min-width: 1200px) {
+  .code-card {
+    width: 25%;
+  }
+}
+ */
+
+
+/* 
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 60px;
+  background: #13293d;
+  color: #fff;
+}
+
+.card {
+  flex: 1 0 0;
+  padding: 10px;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.card header {
+  padding: 20px;
+  background: #13293d;
+  color: #fff;
+}
+
+.card img {
+  width: 100%;
+  min-width: 400px;
+} */

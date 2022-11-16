@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 0;
+  background-color: #33393f;
+  color: violet;
+  font-size: 16px;
+  min-height: 100vh;
+  justify-content: flex-start;
+}
+ 
+#main-header {
+  padding: 40px;
+  text-align: center;
+}
+
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+h1 + p {
+  color: white;
+  padding: 0 10%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.code-header {
+  position: relative;
+  border: 2px solid whitesmoke;
+  border-radius: 5px;
+  margin-top: -20px;
+  margin-bottom: 10px;;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 800;
+  background-color: #33393f;
+  padding: 5px 0 5px 10px;
+  /* padding-left: 10px; */
+  align-items: center;
+}
+
+.code-card {
+  flex: 1;
+  padding: 10px;
+  border: 1px dotted whitesmoke;
+  text-align: left;
+  margin: 10px 10px;
+}
+
+.code-card p {
+  margin: 0 0 0 10px;
+}
+
+.code-card pre {
+  color:antiquewhite;
+  background-image: linear-gradient(
+  rgba(232, 102, 236, 0.3) 0%,
+  rgba(232, 102, 236, 0.6) 100%
+  );
+  margin: 3%;
+  border-radius: 7px;
+  padding: 5%;
+
+  user-select: all;
+}
+
+::selection {
+  color: black;
+  background-color: yellowgreen;
+}
+
+.card-header { 
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+}
+
+.code-card:hover, 
+.code-card:hover .card-header {
+  box-shadow: inset 0px 0px 8px 
+  rgba(232, 102, 236, 1), 0 0 15px
+  rgba(232, 102, 236, 1);
+  cursor: grab;
+}
+
+/* TODO: Use media query to change the width of the cards so they are stacked on top of each other at 768px or smaller */
+
+@media screen and (min-width: 768px) {
+
+  main {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 5px;
+    justify-content: space-around; 
+  }
+
+ .code-card {
+    min-width: 48%;
+    max-width: 50%;
+    margin: 10px 5px;    
+  } 
+}
+
+@media screen and (min-width: 992px) {
+  .code-card {
+    min-width: 28%;
+    max-width: 30%;
+  }
+}
+
